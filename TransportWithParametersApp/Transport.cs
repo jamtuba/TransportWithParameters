@@ -10,6 +10,7 @@ namespace TransportWithParametersApp
     {
         public int TransportCalculator(int transportInKm, int weight)
         {
+            // Sætter transport summen til at være 0,- kr default for km < 5 og vægt < 10
             int sum = 0;
 
             if(transportInKm < 5 && weight >= 10)
