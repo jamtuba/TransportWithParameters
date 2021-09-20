@@ -10,13 +10,9 @@ namespace TransportWithParametersApp
     {
         public int TransportCalculator(int transportInKm, int weight)
         {
-            int sum;
+            int sum = 0;
 
-            if(transportInKm < 5 && weight < 10)
-            {
-                sum = 0;
-            }
-            else if(transportInKm < 5 && weight >= 10)
+            if(transportInKm < 5 && weight >= 10)
             {
                 sum = 50;
             }
@@ -24,7 +20,7 @@ namespace TransportWithParametersApp
             {
                 sum = 75;
             }
-            else
+            else if(transportInKm >= 5 && weight >= 10)
             {
                 sum = 100;
             }
